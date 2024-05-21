@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Ended</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="finalScore">0</h1>
+        <div class="btn-container">
+            <a class="btn" href="/game.html">Play Again</a>
+            <a class="btn" href="/index.html">Go Home</a>
+        </div>
+    </div>
+</body>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const score = urlParams.get('score');
+    document.getElementById('finalScore').innerText = score;
+</script>
+</html>

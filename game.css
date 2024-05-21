@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page-two{
+    background-color:rgb(235,245,254);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#option{
+    display: flex;
+}
+.option-id{
+    height: 3em;
+    width: 3em;
+    padding-top: 0.75em;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    background-color: rgb(106,176,237);
+}
+.option-value{
+    height: 3em;
+    width: 30em;
+    background-color: white;
+    padding-top: 1em;
+    border: none;
+    text-align: left;
+    font-size: larger;
+    padding-left: 1em;
+}
+.option-value:hover{
+    /* box-shadow: 1px 2px 1px 1px rgb(106,176,237);
+    transition: 0.4s; */
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+.option-value[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+.correct {
+    background-color: #28a745;
+}
+  
+.incorrect {
+    background-color: #dc3545;
+}
+.bar-score{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+#progressBar {
+    width: 10rem;
+    height: 2rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.5rem;
+}
+#progressBarFull {
+    height: 1.7rem;
+    background-color: #56a5eb;
+    width: 0%;
+}

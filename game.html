@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickQuiz</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="page-two">
+        <div class="bar-score">
+            <div>
+                <h3 id="progress-text">Question</h3>
+                <div id="progressBar">
+                    <div id="progressBarFull"></div>
+                </div>
+            </div>
+            
+            <div id="score-container">
+                <h1 id="score-text">SCORE</h1>
+                <h1 id="score">0</h1>
+            </div>
+        </div>
+
+        <h1 id="question">What is the answer to this question?</h1>
+        <div class="options">
+            <div id="option">
+                <p class="option-id">A</p>
+                <p class="option-value" data-number="1">Choice 1</p>
+                <!-- <button class="option-value">Choice 1</button> -->
+            </div>
+            <div id="option">
+                <p class="option-id">B</p>
+                <p class="option-value" data-number="2">Choice 2</p>
+            </div>
+            <div id="option">
+                <p class="option-id">C</p>
+                <p class="option-value" data-number="3">Choice 3</p>
+            </div>
+            <div id="option">
+                <p class="option-id">D</p>
+                <p class="option-value" data-number="4">Choice 4</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="game.js"></script>
+</html>
